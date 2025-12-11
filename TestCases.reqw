@@ -1,0 +1,47 @@
+{
+  "id": "TestCases",
+  "description": "Test Cases for SRE Project",
+  "documents": [
+    {
+      "id": "TC",
+      "guid": "b2c3d4e5-f6a7-5234-9012-bcdef2345678",
+      "name": "System Test Cases",
+      "lastId": 3,
+      "createdOn": "2025-12-10T10:05:00.000Z",
+      "createdBy": {
+        "name": "QA Engineer",
+        "email": "qa@example.com",
+        "company": "TechCorp"
+      },
+      "lastChangedOn": "2025-12-10T12:05:00.000Z",
+      "lastChangedBy": {
+        "name": "QA Engineer",
+        "email": "qa@example.com",
+        "company": "TechCorp"
+      },
+      "data": [
+        {
+          "id": "1",
+          "guid": "99999999-8888-7777-6666-555555555551",
+          "heading": "Test Cases"
+        },
+        {
+          "id": "2",
+          "guid": "99999999-8888-7777-6666-555555555552",
+          "heading": "Verify Royalty Calculation with Valid Data",
+          "text": "<p><strong>ID:</strong> TC-01</p><p><strong>Objective:</strong> Verify that the system correctly calculates and updates the royalty balance for valid usage data.</p><p><strong>Pre-conditions:</strong> Artist account exists; Content 'Song A' is published; Royalty rate is set to $0.05 per play; Usage data shows 100 plays.</p><p><strong>Steps:</strong></p><p>1. Trigger the royalty calculation batch job.</p><p>2. Wait for the system to fetch usage data and retrieve rates.</p><p>3. Navigate to the Artist's Earnings Dashboard.</p><p>4. Check the 'Royalty Ledger'.</p><p><strong>Expected Result:</strong></p><p>- System calculates total royalty as $5.00 (100 * 0.05).</p><p>- Artist's balance is updated by +$5.00.</p><p>- Transaction is recorded in the ledger.</p><p><strong>Reference:</strong> UC-01</p>"
+        },
+        {
+          "id": "3",
+          "guid": "99999999-8888-7777-6666-555555555553",
+          "heading": "Verify Content Search and Like Action",
+          "text": "<p><strong>ID:</strong> TC-02</p><p><strong>Objective:</strong> Verify a logged-in user can search for content and successfully 'Like' an item.</p><p><strong>Pre-conditions:</strong> User is logged in; Database contains content item 'Digital Art X'.</p><p><strong>Steps:</strong></p><p>1. Navigate to the search page.</p><p>2. Enter keyword 'Digital Art' and click Search.</p><p>3. Verify 'Digital Art X' appears in the paginated list.</p><p>4. Select 'Digital Art X' to view details.</p><p>5. Click the 'Like' button.</p><p><strong>Expected Result:</strong></p><p>- Search results display the correct item.</p><p>- System records the reaction.</p><p>- The like count for the item increments by 1.</p><p><strong>Reference:</strong> UC-02</p>"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "format": "2.20",
+    "saveHistory": true
+  }
+}

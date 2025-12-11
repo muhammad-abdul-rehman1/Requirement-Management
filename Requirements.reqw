@@ -1,0 +1,64 @@
+{
+  "id": "Requirements",
+  "description": "Functional and Non-Functional Requirements derived from Use Cases",
+  "documents": [
+    {
+      "id": "SRS",
+      "guid": "a1b2c3d4-e5f6-4123-8901-abcdef123456",
+      "name": "System Requirements Specification",
+      "lastId": 6,
+      "createdOn": "2025-12-10T10:00:00.000Z",
+      "createdBy": {
+        "name": "System Analyst",
+        "email": "analyst@example.com",
+        "company": "TechCorp"
+      },
+      "lastChangedOn": "2025-12-10T12:00:00.000Z",
+      "lastChangedBy": {
+        "name": "System Analyst",
+        "email": "analyst@example.com",
+        "company": "TechCorp"
+      },
+      "data": [
+        {
+          "id": "1",
+          "guid": "11111111-2222-3333-4444-555555555551",
+          "heading": "Functional Requirements"
+        },
+        {
+          "id": "2",
+          "guid": "11111111-2222-3333-4444-555555555552",
+          "heading": "Royalty Calculation Logic",
+          "text": "<p><strong>ID:</strong> FR-01</p><p><strong>Description:</strong> The system SHALL calculate the total royalty amount for an artist by multiplying the retrieved content usage data by the specific royalty rate assigned to that content.</p><p><strong>Traceability:</strong> Derived from UC-01 (Royalty Calculation - Step 3).</p>"
+        },
+        {
+          "id": "3",
+          "guid": "11111111-2222-3333-4444-555555555553",
+          "heading": "Search Result Filtering",
+          "text": "<p><strong>ID:</strong> FR-02</p><p><strong>Description:</strong> The system SHALL allow users to refine search results by applying filters for 'Content Title', 'Category', and 'Content Type', displaying only the items that match all selected criteria in a paginated list.</p><p><strong>Traceability:</strong> Derived from UC-02 (User Content Search - Step 5 & 6).</p>"
+        },
+        {
+          "id": "4",
+          "guid": "11111111-2222-3333-4444-555555555554",
+          "heading": "Non-Functional Requirements"
+        },
+        {
+          "id": "5",
+          "guid": "11111111-2222-3333-4444-555555555555",
+          "heading": "Calculation Accuracy",
+          "text": "<p><strong>ID:</strong> NFR-01</p><p><strong>Category:</strong> Reliability/Accuracy</p><p><strong>Description:</strong> All royalty calculations performed by the system MUST be accurate to two decimal places to ensure financial precision for the royalty ledger.</p><p><strong>Traceability:</strong> Constraints on UC-01.</p>"
+        },
+        {
+          "id": "6",
+          "guid": "11111111-2222-3333-4444-555555555556",
+          "heading": "Search Response Time",
+          "text": "<p><strong>ID:</strong> NFR-02</p><p><strong>Category:</strong> Performance</p><p><strong>Description:</strong> The system MUST retrieve and display the initial paginated list of search results within 2 seconds of the user submitting a keyword search under normal load conditions.</p><p><strong>Traceability:</strong> Performance constraint on UC-02.</p>"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "format": "2.20",
+    "saveHistory": true
+  }
+}
